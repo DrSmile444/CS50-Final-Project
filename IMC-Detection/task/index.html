@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Task</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Task</h1><hr>
+	<p>Дано обозначение интегральной микросхемы (для примера):</p>
+	<code class='single'>К155ЛА3</code>
+	<p>Нужно:</p>
+
+	<h2>1. Найти вид микросхемы: </h2>
+
+	<p>Может состоять из 0-2 букв.</p>
+	<p>Первая буква значит:</p>
+	<div class='code'>
+		<code class='inc'>1) К - Сертифікована</code>
+		<code class='inc'>2) Э - Експортна</code>
+		<code class='inc'>3) Пусто (нет первой буквы) - Внутрішня</code>
+	</div>
+
+	<p>Вторая (если есть):</p>
+	<div class="code">
+		<code class="inc">1) М - металокерамічна</code>
+		<code class="inc">2) Н - mini металокерамічна</code>
+		<code class="inc">3) Р - пластмасовий DIP</code>
+		<code class="inc">4) А - mini пластмасовий DIP</code>
+		<code class="inc">5) Ф - mini пластмасовий DIP (інша тех.)</code>
+		<code class="inc">6) Б - безкорпусний</code>
+		<code class="inc">7) Е - металополімерний DIP</code>
+	</div>
+
+	<p>Пример:</p>
+	<div class="code">
+		<code class="inc">КМ - Сертифікована, металокерамічна</code>
+		<code class="inc">ЭЕ - Експортна, металополімерний DIP</code>
+		<code class="inc">" " - Внутрішня</code>
+	</div>
+
+	<h2>2. Найти серию:</h2>
+	<p>Состоит из 3 цифр.</p>
+	<p>Первая:</p>
+
+	<div class="code">
+		<code class="inc">1) Если парная - гібридна</code>
+		<code class="inc">2) Если 1, 5, 7 - напівпровідникова</code>
+		<code class="inc">3) Если 3 - специфічна</code>
+		<p>Дополнительно:</p>
+		<div class="code">
+			<code class="inc">5 - ТТЛ/КМОН</code>
+		</div>
+	</div>
+	
+	<p>Вторая и третья:</p>
+
+	<div class="code">
+		<code class="inc">1) 33 и 59 - ТТЛ, біполярні</code>
+	</div>
+
+	<p>Пример:</p>
+	<div class="code">
+		<code class="inc">159 - напівпровідникова ТТЛ, біполярні</code>
+		<code class="inc">200 - гібридна</code>
+		<code class="inc">333 - специфічна ТТЛ, біполярні</code>
+	</div>
+
+	<h2>3. Найти группу:</h2>
+	<p>Состоит из 2 букв.</p>
+	<p>Первая:</p>
+	<div class="code">
+		<code>1) Л - логічна группа</code>
+		<p>Вторая:</p>
+		<div class="code">
+			<code>1) ЛИ - і (кон'юнктор)</code>
+			<code>2) ЛЛ - або (альт-або)</code>
+			<code>3) ЛН - не (інвертор)</code>
+			<code>4) ЛА - і-не (штрих шефера)</code>
+			<code>5) ЛЕ - або-не (стрілка пірса)</code>
+			<code>6) ЛС - і-або (комплексні МС)</code>
+			<code>7) ЛБ - і-не, або-не (комплексні мс, стрілка + штрих)</code>
+			<code>8) ЛР - і-або-не (комплексні МС і полярними входами)</code>
+			<code>9) ЛК - і-або-не, і-або (комплексні МС с полярними входами, стрілка + штрих)</code>
+			<code>10) ЛК - або-не, або</code>
+			<code>11) ЛД - розширені</code>
+			<code>12) ЛП - інші</code>
+		</div>
+	</div>
+
+	
+	<h2>4. Узнать год:</h3>
+	<p>Может иметь 2-4 цифры:</p>
+	<div class="code">
+		<code>1) Если цифр только 2 - 84-</code>
+		<code>2) Если цифр больше 2 - 84+</code>
+	</div>
+
+
+
+	<h2>5. Узнать модификацию:</h2>
+	<p>В зависимости от случая.</p>
+	<code class='single'>Если есть после прошлого шага есть буква - она является модицикацией.</code>
+	<p>Пример (игнорируя все обозначение, кроме модификации):</p>
+	<div class="code">
+		<code>К155ЛА3Б - мод Б</code>
+		<code>КМ500ЛЕ3А - мод А</code>
+		<code>ЭН655ЛЛ3 - " " (пусто, модификации нет)</code>
+	</div>
+	<script>
+	</script>
+</body>
+</html>

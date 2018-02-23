@@ -1,0 +1,54 @@
+body {
+  color: aquamarine;
+  background: black;
+  text-align: center;
+  margin: auto;
+  margin-top: 60px;
+  display: table;
+}
+
+h1 {
+  font-size: 60px;
+  color: aquamarine;
+  margin: 20px;
+}
+
+#output {
+  height: 200px;
+  width: 200px;
+  background: rgb(104, 211, 175);
+  padding: 20px;
+  resize: none;
+  text-align: right;
+  font-size: 16px;
+}
+
+button {
+  font-weight: bold;
+  margin: 20px 10px;
+  border: 0;  
+}
+
+.btn-int {
+  background: aquamarine;
+  width: 100px;
+  height: 40px;
+}
+
+.btn-int:hover {
+  background: rgb(104, 211, 175);
+  cursor: pointer;
+}
+
+.btn-help {
+  color: aquamarine;
+  background: rgba(0, 0, 0, 0);
+  widows: 50px;
+  height: 30px;
+}
+
+.btn-help:hover {
+  color: black;
+  background: aquamarine;
+  cursor: pointer;
+}

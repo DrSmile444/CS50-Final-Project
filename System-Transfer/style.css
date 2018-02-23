@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body {
+	background: #832B2B;
+}
+
+h1 {
+	color: white;
+	margin: 20px auto;
+	display: table;
+	font-size: 60px;
+	font-family: 'Lobster', cursive;
+}
+
+.numbers {
+	width: 500px;
+	height: 200px;
+	margin: 20px;
+	background: #320808;
+	color: white;
+	text-align: center;
+}
+
+#submit {
+	height: 205px;
+	margin: 20px;
+	background: white;
+	color: #320808;
+	cursor: pointer;
+}
+
+#math {
+	margin: auto;
+	display: table;
+}
+
+form {
+	display: flex;
+}
+
+#result {
+	margin: auto;
+	margin-top: 20px;
+	display: table;
+	width: 1000px;
+	height: 100px;
+	text-align: center;
+}
+
+input {
+	font-size: 30px;
+	box-shadow: 0 0 10px rgba(0,0,0,1);;
+	border: 0px;
+}
